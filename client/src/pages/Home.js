@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
 import Typewriter from "typewriter-effect";
 import Footer from "../components/Footer";
+import Navbar1 from "../components/Navbar";
 
 
 export default function Home() {
@@ -14,13 +15,18 @@ export default function Home() {
   }
 
   return (
-    <div className="home page">
+    <div className="home-page">
+      <Navbar1 />
+
       <div className="hero">
+      
+        
         <h1 className="banner-heading1">Start Learning From </h1>
         <span className="banner-heading2">The World's Best Teachers</span>
 
         <div className="content">
           <p>
+          <image src=".\home.jpg" />
             Start, switch, or advance your career with more than 5,000 courses,
             Professional Certificates, and degrees from world-class universities
             and companies.
@@ -51,9 +57,9 @@ export default function Home() {
             )}
           </div>
         </div>
-        {/* <div className="image">
-          <img src="/images/hero.svg" alt="Hero-image" />
-        </div> */}
+        <div className="image">
+          <img src="/images/home.jp" alt="Hero-image" />
+        </div>
       </div>
       <div className="p-2">
         <br />

@@ -18,14 +18,14 @@ import Settings from "./pages/Settings";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Course from "./pages/Course";
+import Navbar1 from "./components/Navbar";
 
 
 function App() {
   return (
     <UserAuthContextProvider>
       <div className="app-wrap">
-        <Navbar />
-        <Sidebar />
+        
         <div className="app">
           <Routes>
             <Route path="/" element={<Home />} />

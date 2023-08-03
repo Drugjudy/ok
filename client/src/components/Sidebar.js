@@ -72,6 +72,7 @@ export default function Sidebar() {
       <div id="menu-btn" className="menu-button" onClick={ShowSidebar}>
         =
       </div>
+      
       <div
         className={sidebar ? "sidebar active-sidebar" : "sidebar"}
         onClick={ShowSidebar}
@@ -108,3 +109,4 @@ export default function Sidebar() {
     </>
   );
 }
+
